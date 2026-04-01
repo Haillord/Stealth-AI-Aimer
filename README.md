@@ -37,6 +37,13 @@
 
 ---
 
+## 🔧 Сборка и запуск
+
+> **Сами разберетесь как собрать нахуй блять**
+
+---
+
+
 ## 📦 Готовый исполняемый файл (Release)
 
 🚀 **[Скачать StealthAimer v1.0 Stable](https://github.com/Haillord/ahahha-otsosal/releases/tag/1.0)**
