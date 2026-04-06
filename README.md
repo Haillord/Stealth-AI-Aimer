@@ -1,119 +1,171 @@
 <p align="center">
-  <img src="icon.png" alt="FinCat Banner" style="max-width: 100%; width: auto; height: auto;">
+  <img src="icon.png" width="20%" alt="Stealth AI Aimer">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/Haillord/aim?style=for-the-badge&color=red" alt="license">
-  <img src="https://img.shields.io/github/stars/Haillord/aim?style=for-the-badge&color=red" alt="stars">
-  <img src="https://img.shields.io/github/last-commit/Haillord/aim?style=for-the-badge&color=red" alt="last commit">
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&pause=2000&color=FF2244&center=true&vCenter=true&width=700&height=45&duration=40&lines=Stealth+AI+Aimer+%F0%9F%8E%AF;YOLOv11+TensorRT+%E2%80%A2+Arduino+HID;Hardware+mouse+%E2%80%A2+undetectable;RTX+5070+%E2%80%A2+sub+1ms+detection">
 </p>
-
-<h1 align="center">Stealth AI Aimer</h1>
 
 <p align="center">
-  <b>Hardware Mouse Aiming System 2026 Edition</b><br>
-  Аппаратный аим-ассистент нового поколения на базе YOLOv11 TensorRT и Arduino.
+  <img src="https://img.shields.io/github/license/Haillord/Stealth-AI-Aimer?style=for-the-badge&label=LICENSE&color=FF2244&labelColor=1a1a1a" alt="license">
+  <img src="https://img.shields.io/github/stars/Haillord/Stealth-AI-Aimer?style=for-the-badge&label=STARS&color=FF2244&labelColor=1a1a1a" alt="stars">
+  <img src="https://img.shields.io/github/last-commit/Haillord/Stealth-AI-Aimer?style=for-the-badge&label=LAST+COMMIT&color=FF2244&labelColor=1a1a1a" alt="last commit">
 </p>
 
-> **⚠️ Внимание:** Данный репозиторий создан в образовательных целях. Название и контент являются частью авторского стиля.
+<div align="center">
+
+[![](https://img.shields.io/badge/🚀_Скачать_v1.0_Stable-FF2244?style=for-the-badge&logoColor=white)](https://github.com/Haillord/ahahha-otsosal/releases/tag/1.0)
+
+</div>
 
 ---
 
-### 🧠 Как это работает
+<table>
+<tr>
+<td width="50%" valign="top">
+<img src="https://img.shields.io/badge/🎯_YOLOv11_TensorRT-FF2244?style=flat-square&logoColor=white"/>
 
-Система построена на принципе разделения вычислений и действий, что делает её невидимой для софтверных античитов:
+Детекция целей менее чем за 1 мс на тензорных ядрах RTX
+</td>
+<td width="50%" valign="top">
+<img src="https://img.shields.io/badge/🖱️_Arduino_HID-1a1a1a?style=flat-square&logoColor=white"/>
 
-1. **Захват экрана** — библиотека `dxcam` вырезает центральную область (FOV) с минимальной задержкой.
-2. **Детекция целей** — YOLOv11 (TensorRT) на тензорных ядрах **RTX 5070** определяет противников менее чем за 1 мс.
-3. **Адаптивный хитбокс** — точка прицеливания динамически смещается в зависимости от размера цели.
-4. **Имитация человеческого поведения**:
-   - Случайная задержка реакции (50–250 мс).
-   - Плавное сглаживание с джиттером.
-   - Вероятность намеренного промаха.
-5. **Аппаратное движение мыши** — координаты отправляются по Serial на **Arduino Leonardo**, которая эмулирует USB-мышь.
+Аппаратная эмуляция USB-мыши — невидима для античитов
+</td>
+</tr>
+<tr>
+<td valign="top">
+<img src="https://img.shields.io/badge/🧠_Адаптивный_хитбокс-7D0000?style=flat-square&logoColor=white"/>
 
----
+Динамическое смещение точки прицеливания по размеру цели
+</td>
+<td valign="top">
+<img src="https://img.shields.io/badge/👤_Human_Behavior-FF2244?style=flat-square&logoColor=white"/>
 
-### 🖥️ Необходимое оборудование
-
-| Компонент | Рекомендации |
-| :--- | :--- |
-| **Arduino** | [Leonardo / Pro Micro (ATmega32U4)](https://www.arduino.cc/en/Main/ArduinoBoardLeonardo) — наличие USB-HID. |
-| **Видеокарта** | **NVIDIA RTX 5070** / 40 / 30 series (для TensorRT). |
-| **Процессор** | [Ryzen 5 5600](https://www.amd.com/en/products/cpu/amd-ryzen-5-5600) или выше. |
-
----
-
-### 📦 Готовый исполняемый файл (Release)
-
-Если вы не хотите возиться с Python, скачайте стабильную версию:
-
-🚀 **[Скачать StealthAimer v1.0 Stable](https://github.com/Haillord/ahahha-otsosal/releases/tag/1.0)**
-
-**Порядок запуска:**
-1. Подключите Arduino к ПК.
-2. Запустите `StealthAimer.exe`.
-3. Вкладка **Прошивка** → выберите COM-порт → **Прошить**.
-4. Нажмите **F1** для активации в игре.
+Случайная задержка, джиттер и шанс намеренного промаха
+</td>
+</tr>
+</table>
 
 ---
 
-### 🔧 Сборка из исходников
+### 🛠 Стек
 
-#### 1. Установите зависимости:
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/YOLOv11-FF2244?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white"/>
+  <img src="https://img.shields.io/badge/dxcam-1a1a1a?style=for-the-badge&logoColor=white"/>
+</p>
+
+---
+
+### 🖥️ Оборудование
+
+<table>
+<tr>
+<th>Компонент</th>
+<th>Рекомендации</th>
+</tr>
+<tr>
+<td><code>Arduino</code></td>
+<td>🔌 Leonardo / Pro Micro (ATmega32U4) — USB-HID</td>
+</tr>
+<tr>
+<td><code>Видеокарта</code></td>
+<td>🎮 NVIDIA RTX 5070 / 40 / 30 series (TensorRT)</td>
+</tr>
+<tr>
+<td><code>Процессор</code></td>
+<td>⚡ Ryzen 5 5600 или выше</td>
+</tr>
+</table>
+
+---
+
+### 🔧 Установка
 ```bash
+# Установить зависимости
 pip install pyserial ultralytics dxcam numpy
-```
 
-#### 2. Подготовка модели (.engine)
-Для максимального FPS на RTX 5070 выполните экспорт:
-```python
-from ultralytics import YOLO
-model = YOLO("yolov11m.pt")
-model.export(format="engine", half=True, imgsz=640)
-```
+# Экспорт модели для TensorRT
+python -c "from ultralytics import YOLO; YOLO('yolov11m.pt').export(format='engine', half=True, imgsz=640)"
 
-#### 3. Сборка в .exe:
-```bash
+# Сборка в .exe
 pyinstaller --onefile --windowed --add-data "resources;resources" --name "StealthAimer" main.py
 ```
 
 ---
 
+### 🎛️ Настройка
+
+<table>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Рекомендация</th>
+</tr>
+<tr>
+<td><code>Confidence</code></td>
+<td>🎯 Уверенность детекции</td>
+<td>0.45 – 0.55</td>
+</tr>
+<tr>
+<td><code>FOV</code></td>
+<td>📐 Область захвата</td>
+<td>300 – 500 px</td>
+</tr>
+<tr>
+<td><code>Smooth</code></td>
+<td>🖱️ Плавность доводки</td>
+<td>0.2 – 0.4</td>
+</tr>
+<tr>
+<td><code>Miss chance</code></td>
+<td>🎲 Шанс промаха</td>
+<td>0.05 – 0.1</td>
+</tr>
+</table>
+
+---
+
 ### 🔌 Прошивка Arduino
 
-В папке resources находится готовый файл firmware.hex. Скрипт flasher.py автоматически загрузит его через avrdude.
-После прошивки светодиод на плате мигнёт три раза.
+<details>
+<summary><b>Показать инструкцию</b></summary>
+<br>
+<pre>
+1. Подключите Arduino к ПК
+2. Запустите StealthAimer.exe
+3. Вкладка "Прошивка" → выберите COM-порт → "Прошить"
+4. Светодиод мигнёт три раза — готово
+5. Нажмите F1 для активации в игре
+</pre>
+</details>
 
 ---
 
-### 🎛️ Настройка параметров
+### ❓ Устранение неполадок
 
-| Параметр | Описание | Рекомендация |
-|---|---|---|
-| Confidence | Уверенность детекции | 0.45 – 0.55 |
-| FOV (px) | Область захвата | 300 – 500 px |
-| Smooth | Плавность доводки | 0.2 – 0.4 |
-| Miss chance | Шанс промаха | 0.05 – 0.1 |
-
----
-
-### 🔧 Устранение неполадок
-
-✅ Arduino не двигает мышь: Проверьте COM-порт в настройках и убедитесь, что выбрана плата Leonardo.
-✅ ModuleNotFoundError: Убедитесь, что установлена библиотека pyserial, а не serial.
-✅ Low FPS: Проверьте, что модель сконвертирована в .engine под вашу конкретную видеокарту.
+<details>
+<summary><b>Показать решения</b></summary>
+<br>
+<pre>
+Arduino не двигает мышь  → проверьте COM-порт, выберите плату Leonardo
+ModuleNotFoundError      → установите pyserial, не serial
+Low FPS                  → конвертируйте модель в .engine под вашу видеокарту
+</pre>
+</details>
 
 ---
 
-### 📄 Лицензия
-
-Проект распространяется под лицензией MIT. Автор не несет ответственности за блокировки аккаунтов. Используйте на свой страх и риск.
+> ⚠️ Репозиторий создан в образовательных целях. Автор не несёт ответственности за блокировки аккаунтов.
 
 ---
 
 <p align="center">
   <img src="https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python" alt="python">
   <img src="https://img.shields.io/badge/Powered%20by-NVIDIA%20TensorRT-76B900?style=for-the-badge&logo=nvidia" alt="tensorrt">
-  <img src="https://img.shields.io/badge/Developer-Haillord-red?style=for-the-badge&logo=telegram" alt="author">
+  <img src="https://img.shields.io/badge/Developer-Haillord-FF2244?style=for-the-badge&logo=telegram" alt="author">
 </p>
